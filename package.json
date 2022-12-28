@@ -36,6 +36,7 @@
   },
   "dependencies": {
     "@glidejs/glide": "^3.6.0",
+    "gsap": "^3.11.4",
     "gulp-uglify": "^3.0.2",
     "postcss": "^8.3.6",
     "postcss-scss": "^2.0.0",

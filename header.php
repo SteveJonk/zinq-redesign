@@ -15,4 +15,4 @@
 
 
 
-        <main class="main-content">
+        <main class="main">
