@@ -1,0 +1,28 @@
+.navigation {
+  &__body {
+    &__items {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      & li {
+        border-bottom-style: solid;
+        border-bottom-color: $grey-200;
+        border-bottom-width: 1px;
+        & a {
+          color: white;
+          display: table;
+          text-decoration: none;
+          padding: 0 20px;
+          box-sizing: border-box;
+          height: 80px;
+          width: 100%;
+          & > .inner {
+            display: table-cell;
+            vertical-align: middle;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}

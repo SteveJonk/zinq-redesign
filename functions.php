@@ -12,15 +12,13 @@ include "inc/sidebars.php";
 include "inc/group-block-style.php";
 include "inc/image-block-style.php";
 
-function theme_support()
-{
-    add_theme_support('woocommerce');
-    add_theme_support('wp-block-styles');
-}
-add_action('after_setup_theme', 'theme_support');
 
 function theme_features()
 {
+
+    add_theme_support('woocommerce');
+    add_theme_support('wp-block-styles');
+
     register_nav_menu('headerMenuLocation', 'Header Menu Location');
 
     add_theme_support('title-tag');

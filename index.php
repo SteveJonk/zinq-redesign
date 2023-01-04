@@ -4,10 +4,11 @@
 
 <div class="navigation">
     <div class="navigation__header">
-        <img class="navigation__header__logo"
-            src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-wit.png" />
+        <img class="navigation__header__logo" src="<?php echo get_theme_mod('navbar_logo'); ?>" />
     </div>
-    <div class="navigation__body"></div>
+    <div class="navigation__body">
+        <?php get_template_part('template-parts/menu') ?>
+    </div>
 </div>
 
 <div class="content">

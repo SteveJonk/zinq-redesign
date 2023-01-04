@@ -1,5 +1,5 @@
 
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,600;1,400;1,600&display=swap");
 /*!
     Theme Name: Zinq
     Author: Steve Jonk
@@ -46,19 +46,20 @@
 .text-center {
   text-align: center; }
 body {
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px; }
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-weight: 300; }
 p {
   margin-top: 0;
   font-size: 16px;
-  line-height: 1.4; }
+  line-height: 1.4;
+  font-weight: 300; }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-style: italic;
-  font-weight: 700; }
+  font-weight: 600; }
 h1 {
   font-size: 31px; }
 h2 {
@@ -88,7 +89,8 @@ a {
     .main {
       display: block; } }
 .navigation {
-  position: sticky;
+  position: fixed;
+  height: 100%;
   left: 0;
   top: 0;
   width: 300px;
@@ -102,11 +104,34 @@ a {
       width: 80%; }
 .content {
   position: relative;
-  padding: 20px 40px; }
+  padding: 20px 40px;
+  width: calc(100% - 300px);
+  margin-left: auto;
+  box-sizing: border-box; }
 .login {
   background-color: #f8f4f1; }
 .login #login h1 a {
     background-image: url("assets/images/Logo.svg"); }
+.navigation__body__items {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+.navigation__body__items li {
+    border-bottom-style: solid;
+    border-bottom-color: #bfbfbf;
+    border-bottom-width: 1px; }
+.navigation__body__items li a {
+      color: white;
+      display: table;
+      text-decoration: none;
+      padding: 0 20px;
+      box-sizing: border-box;
+      height: 80px;
+      width: 100%; }
+.navigation__body__items li a > .inner {
+        display: table-cell;
+        vertical-align: middle;
+        height: 100%; }
 /* Base stuff */
 html {
   width: 100%; }

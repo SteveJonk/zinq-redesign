@@ -1,3 +1,5 @@
+$navbarWidth: 300px;
+
 .main {
   display: flex;
   @include Mobile {
@@ -6,10 +8,11 @@
 }
 
 .navigation {
-  position: sticky;
+  position: fixed;
+  height: 100%;
   left: 0;
   top: 0;
-  width: 300px;
+  width: $navbarWidth;
   background-color: $common-black;
   height: 100vh;
   flex-shrink: 0;
@@ -25,4 +28,7 @@
 .content {
   position: relative;
   padding: 20px 40px;
+  width: calc(100% - 300px);
+  margin-left: auto;
+  box-sizing: border-box;
 }
