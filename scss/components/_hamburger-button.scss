@@ -14,8 +14,8 @@
   flex-direction: column;
   cursor: pointer;
   background-color: #eeeeee;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   border-radius: 10px;
   box-shadow: -7px -7px 20px 0 #fff9, -4px -4px 5px 0 #fff9, 7px 7px 20px 0 #0002,
     4px 4px 5px 0 #0001, inset 0px 0px 0px 0px #fff9, inset 0 0 0 0 #0001, inset 0 0 0 0 #fff9,
@@ -27,12 +27,14 @@
     width: 20px;
     height: 2px;
     border-radius: 4px;
-    margin: 3px 0 3px 0;
+    margin: 2px 0 2px 0;
   }
   span:nth-child(2) {
     transform-origin: 50% 50%;
   }
-  &:active {
+  &:active,
+  &:focus,
+  &:hover {
     box-shadow: 0 0 0 0 #fff9, 0 0 0 0 #fff9, 0 0 0 0 #0001, 0 0 0 0 #0001,
       inset -7px -7px 20px 0 #fff9, inset -4px -4px 5px 0 #fff9, inset 7px 7px 20px 0 #0003,
       inset 4px 4px 5px 0 #0001;

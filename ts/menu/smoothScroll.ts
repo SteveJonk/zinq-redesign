@@ -1,4 +1,5 @@
 import { scrollIntoViewWithOffset } from '../utils/scrollIntoViewWithOffset'
+import { closeMenu } from './toggleMenuMobile'
 
 export const smoothScrollLinks = () => {
   const menuLinks = document.querySelectorAll('#navbar li a')
@@ -7,7 +8,8 @@ export const smoothScrollLinks = () => {
       event.preventDefault()
       const currentTarget = event.currentTarget as HTMLAnchorElement
       const anchor = currentTarget.hash
-      scrollIntoViewWithOffset(anchor, 30)
+      scrollIntoViewWithOffset(anchor, 50)
+      closeMenu()
     })
   })
 }

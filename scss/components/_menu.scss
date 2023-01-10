@@ -28,6 +28,9 @@
 }
 
 .m_close {
+  @include onlyTablet {
+    display: none;
+  }
   position: absolute;
   right: 15px;
   top: 15px;
