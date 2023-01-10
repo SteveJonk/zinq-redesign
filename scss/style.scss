@@ -24,10 +24,12 @@
 @import './components/main';
 @import './components/admin-login';
 @import './components/menu';
+@import './components/hamburger-button';
 
 /* Base stuff */
 html {
   width: 100%;
+  overflow-x: hidden;
 }
 
 body {

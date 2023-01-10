@@ -1,8 +1,13 @@
 <?php get_header(); ?>
 
+<div id="open_menu" class="m_button">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
 
-
-<div class="navigation">
+<div id="navigation" class="navigation">
+    <div id="close_menu" class="m_close"></div>
     <div class="navigation__header">
         <img class="navigation__header__logo" src="<?php echo get_theme_mod('navbar_logo'); ?>" />
     </div>

@@ -10,7 +10,6 @@ export const animateImageOnScroll = () => {
     gsap.from(element, {
       opacity: 0,
       y: 24,
-      x: 30,
       duration: 0.8,
     })
 
@@ -18,11 +17,12 @@ export const animateImageOnScroll = () => {
       opacity: 1,
       y: 0,
       x: 0,
+      ease: 'power2.inOut',
       scrollTrigger: {
-        end: '0 60%',
+        end: '0 50%',
         start: '0 100%',
         trigger: element,
-        scrub: 0.5,
+        scrub: 0.1,
       },
     })
   })

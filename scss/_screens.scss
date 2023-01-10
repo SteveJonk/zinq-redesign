@@ -21,3 +21,9 @@
     @content;
   }
 }
+
+@mixin onlyTablet {
+  @media (min-width: 530px) {
+    @content;
+  }
+}
