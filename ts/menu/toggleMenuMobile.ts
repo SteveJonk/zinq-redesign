@@ -14,7 +14,7 @@ export const toggleMenu = () => {
 export const openMenu = () => {
   gsap.to('#navigation', {
     x: '100%',
-    ease: 'slow(0.5, 0.4, false)',
+    ease: 'slow(0.3, 0.2, false)',
     delay: 0.2,
   })
   document.documentElement.style.overflowY = 'hidden'
@@ -22,7 +22,7 @@ export const openMenu = () => {
 export const closeMenu = () => {
   gsap.to('#navigation', {
     x: '0',
-    duration: 1.2,
+    duration: 0.6,
     ease: 'power2.out',
   })
   document.documentElement.style.overflowY = 'auto'

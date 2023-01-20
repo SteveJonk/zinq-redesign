@@ -13,7 +13,7 @@
   justify-content: center;
   flex-direction: column;
   cursor: pointer;
-  background-color: #eeeeee;
+  background-color: $common-black;
   width: 35px;
   height: 35px;
   border-radius: 10px;
@@ -22,7 +22,7 @@
     inset 0 0 0 0 #0001;
   transition: box-shadow 0.2s;
   span {
-    background-color: $grey-300;
+    background-color: white;
     box-shadow: 0 0 10px 0 rgba(240, 128, 128, 0.3);
     width: 20px;
     height: 2px;
@@ -31,12 +31,5 @@
   }
   span:nth-child(2) {
     transform-origin: 50% 50%;
-  }
-  &:active,
-  &:focus,
-  &:hover {
-    box-shadow: 0 0 0 0 #fff9, 0 0 0 0 #fff9, 0 0 0 0 #0001, 0 0 0 0 #0001,
-      inset -7px -7px 20px 0 #fff9, inset -4px -4px 5px 0 #fff9, inset 7px 7px 20px 0 #0003,
-      inset 4px 4px 5px 0 #0001;
   }
 }
