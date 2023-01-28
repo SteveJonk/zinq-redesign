@@ -152,6 +152,10 @@ a {
     border-bottom-style: solid;
     border-bottom-color: #bfbfbf;
     border-bottom-width: 1px; }
+.navigation__body__items li.project {
+      background-color: #e1e2e1; }
+.navigation__body__items li.project a {
+        color: #0b0000; }
 .navigation__body__items li a {
       color: white;
       display: table;

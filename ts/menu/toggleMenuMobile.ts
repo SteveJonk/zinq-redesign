@@ -1,5 +1,7 @@
 import gsap from 'gsap'
 
+const tl = gsap.timeline()
+
 export const toggleMenu = () => {
   const openButton = document.getElementById('open_menu')
   const closeButton = document.getElementById('close_menu')
@@ -12,10 +14,14 @@ export const toggleMenu = () => {
 }
 
 export const openMenu = () => {
-  gsap.to('#navigation', {
+  tl.to('#navigation', {
     x: '100%',
     ease: 'slow(0.3, 0.2, false)',
     delay: 0.2,
+  }).from('#navbar li', {
+    x: '-100%',
+    stagger: 0.1,
+    duration: 1,
   })
   document.documentElement.style.overflowY = 'hidden'
 }

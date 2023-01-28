@@ -8,6 +8,12 @@
         border-bottom-style: solid;
         border-bottom-color: $grey-200;
         border-bottom-width: 1px;
+        &.project {
+          background-color: $secondary-color;
+          & a {
+            color: $common-black;
+          }
+        }
         & a {
           color: white;
           display: table;
