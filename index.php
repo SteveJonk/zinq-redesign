@@ -1,4 +1,10 @@
-<?php get_header(); ?>
+<?php get_header();
+
+get_template_part('template-parts/intro');
+
+?>
+
+
 
 <div id="open_menu" class="m_button">
     <span></span>
