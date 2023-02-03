@@ -1,5 +1,5 @@
 .wp-block-spacer {
-  @include Mobile {
+  @include Tablet {
     display: none;
   }
 }

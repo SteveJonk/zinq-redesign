@@ -4,6 +4,9 @@
     overflow-y: auto;
     scrollbar-width: none;
     -ms-overflow-style: none;
+    @include Tablet {
+      height: calc(100vh - 220px);
+    }
     &::-webkit-scrollbar {
       display: none;
     }
