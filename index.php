@@ -25,11 +25,14 @@ get_template_part('template-parts/intro');
 <div class="content">
 
     <?php
-    query_posts(array(
+
+    $args = array(
         'post_type' => 'page',
         'orderby' => 'menu_order',
         'order' => 'ASC'
-    ));
+    );
+
+    query_posts($args);
 
     while (have_posts()) {
         the_post();

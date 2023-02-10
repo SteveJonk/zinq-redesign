@@ -27,12 +27,12 @@ export const intro = () => {
       },
       '+=0.3'
     )
+    .set('body', {
+      position: 'static',
+    })
     .from('#navbar li', {
       x: '-100%',
       stagger: 0.1,
       duration: 1,
-    })
-    .set('body', {
-      position: 'static',
     })
 }
